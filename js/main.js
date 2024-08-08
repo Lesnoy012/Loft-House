@@ -3,6 +3,7 @@ const nav = document.querySelector('.header__top-row');
 burger_btn.onclick = function () {
     burger_btn.classList.toggle("active");
     nav.classList.toggle("nav-mobile");
+    document.body.classList.toggle("no-scroll");
 }
 
 /* PhoneMask */

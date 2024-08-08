@@ -50,6 +50,10 @@ a {
   font-weight: 700;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 // Media
 @media screen and (max-width: 768px) {
   .title2 {
