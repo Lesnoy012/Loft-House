@@ -1,0 +1,44 @@
+.cta {
+  padding: 180px 0;
+  background-image: url("./../img/cta/cta-bg.jpg");
+}
+
+.cta__title {
+  margin-bottom: 17px;
+}
+
+.content {
+  display: flex;
+  column-gap: 30px;
+}
+
+.cta__text {
+  max-width: 540px;
+  line-height: 24px;
+}
+
+// Media
+@media screen and (max-width: 768px) {
+  .cta {
+    padding: 150px 0;
+  }
+
+  .cta__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    display: grid;
+    row-gap: 15px;
+  }
+
+  .cta {
+    padding: 50px 0;
+  }
+
+  .cta__text {
+    font-size: 12px;
+  }
+}

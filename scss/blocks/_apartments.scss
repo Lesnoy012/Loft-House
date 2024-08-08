@@ -1,0 +1,69 @@
+.apartments {
+  position: relative;
+
+  &:before {
+    content: "III";
+    right: calc(50% + 555px);
+    transform: translateX(50%);
+    @include decorNumber;
+  }
+}
+
+.apartments-title {
+  margin-bottom: 88px;
+}
+
+.apartments__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.apartments__cards-item {
+  position: relative;
+}
+
+.apartments__cards-item-title {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 400;
+  left: 50px;
+  bottom: 44px;
+}
+
+//media 
+@media screen and (max-width: 768px) {
+  .apartments-title {
+    margin-bottom: 50px;
+    font-size: 30px;
+
+  }
+
+  .apartments__cards {
+    gap: 10px;
+  }
+
+  .apartments__cards-item-title {
+    font-size: 22px;
+    left: 25px;
+    bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .apartments-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .apartments__cards-item-title {
+    font-size: 15px;
+    left: 5px;
+    bottom: 5px;
+  }
+
+  .apartments__cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

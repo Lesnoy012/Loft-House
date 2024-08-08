@@ -1,0 +1,9 @@
+@mixin decorNumber {
+  position: absolute;
+  font-family: $font-accent;
+  color: rgba(255, 255, 255, 0.02);
+  font-size: 400px;
+  font-weight: 700;
+  top: 0;
+  line-height: 1.15;
+}
